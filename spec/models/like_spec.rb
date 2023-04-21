@@ -6,7 +6,7 @@ RSpec.describe Like, type: :model do
     post = Post.create(title: 'My post', text: 'This is my first post', author_id: user.id, comment_counter: 0,
                        likes_counter: 0)
 
-    subject { described_class.create(post: post, author_id: user.id) }
+    subject { described_class.create(post:, author_id: user.id) }
 
     it 'must contain an user id' do
       subject.author_id = nil
