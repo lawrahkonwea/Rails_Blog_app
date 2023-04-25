@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-<h1 align='center'> Rails Blog</h1>
+<h1 align='center'> Rails Blog Appp</h1>
 
 
 # 📗 Table of Contents
@@ -118,7 +118,7 @@ To deploy the app you can use
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="author"></a>
 
 ### 👤 **Amaka Konwea**:
 - GitHub: [@lawrah_on_GitHub](https://github.com/lawrahkonwea)
