@@ -12,8 +12,8 @@ second_user = User.create(name: 'Jaden', photo: 'https://unsplash.com/photos/F_-
 first_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my first post')
 second_post = Post.create(author_id: second_user.id, title: 'Hi', text: 'This is my second post')
 
-first_comment = Comment.create(author_id: first_user.id, post_id: first_post, title: 'Hi there' text: 'Hi Tom!' )
-second_comment = Comment.create(author_id: second_user.id, post_id: second_post, title: 'Hollaaa' text: 'Hi Jake')
+first_comment = Comment.create(author_id: first_user.id, post_id: first_post, text: 'Hi Tom!' )
+second_comment = Comment.create(author_id: second_user.id, post_id: second_post, text: 'Hi Jake')
 
 first_like = Like.create(author_id: second_user.id, post_id: first_post)
 second_like = Like.create(author_id: first_user.id, post_id: second_post)
