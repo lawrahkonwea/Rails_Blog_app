@@ -5,6 +5,6 @@ class UsersController < ApplicationController
 
 
   def show; 
-  @posts = Post.all
+  @posts = Post.includes(:user)
   end
 end
