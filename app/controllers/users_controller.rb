@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
-  def index; end
+  def index; 
+  @users = User.all
+  end
 
-  def show; end
+
+  def show; 
+  @posts = Post.all
+  end
 end

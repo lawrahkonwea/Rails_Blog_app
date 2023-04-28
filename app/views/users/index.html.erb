@@ -1,1 +1,20 @@
-<h1>Here is the list of all users</h1>
+<h1>Here is a list of all users</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Photo</th>
+      <th>Bio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><img src="<%= user.photo %>" alt="User" /></td>
+        <td><%= user.bio %></td>
+      </tr>
+      <%= link_to "view", user %>
+    <% end %>
+  </tbody>
+</table>
