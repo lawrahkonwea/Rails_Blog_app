@@ -15,13 +15,7 @@
         <%= form_with url: "/users/#{@post.author.id}/posts/#{@post.id}/likes" do |form| %>
      <%= form.submit 'Like', class: 'single-button' %>
   <% end %>
-  
-  <%= form_with(model: @comment, url: "/users/#{@post.author.id}/posts/#{@post.id}/comments", method: :post, scope: :comment) do |form| %>
-        <div class="comment-form">
-        <%= form.text_field :text, required: true, autofocus: true, placeholder: 'Add your comment here'%>
-        <%= form.submit "Comment", class: "comment-button"%>
-        <div>
-    <%end%>
+  <div><%= link_to "Add Comment", new_user_post_comment_path(@post.author.id, @post.id) %></div>
     </div>
     
  
