@@ -16,8 +16,8 @@ fifth_post = Post.create(author_id: first_user.id, title: 'halooo', text: 'Nice 
 second_post = Post.create(author_id: second_user.id, title: 'Hi', text: 'This is my second post')
 third_post = Post.create(author_id: second_user.id, title: 'Hi there', text: 'Where are you from?')
 
-first_comment = Comment.create(author_id: first_user.id, post_id: first_post, text: 'Hi Tom!' )
-second_comment = Comment.create(author_id: second_user.id, post_id: second_post, text: 'Hi Jake')
+first_comment = Comment.create(author_id: first_user.id, post_id: first_post.id, text: 'Hi Tom!' )
+second_comment = Comment.create(author_id: second_user.id, post_id: second_post.id, text: 'Hi Jake')
 
-first_like = Like.create(author_id: second_user.id, post_id: first_post)
-second_like = Like.create(author_id: first_user.id, post_id: second_post)
+first_like = Like.create(author_id: second_user.id, post_id: first_post.id)
+second_like = Like.create(author_id: first_user.id, post_id: second_post.id)
