@@ -1,2 +1,9 @@
-<h1>Comments#index</h1>
-<p>Find me in app/views/comments/index.html.erb</p>
+<div>
+    <h3> Add new comment</h3>
+    <%= form_with model: @comment, url: user_post_comments_path(@post) do |form| %>
+        <div class="comment-form">
+        <%= form.text_field :text, required: true, autofocus: true, placeholder: 'Add your comment here'%>
+        <%= form.submit "Comment", class: "comment-button"%>
+        <div>
+    <%end%>
+</div>
