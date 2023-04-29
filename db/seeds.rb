@@ -6,11 +6,15 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-first_user = User.create(name: 'Amaka', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-second_user = User.create(name: 'Jaden', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
+first_user = User.create(name: 'Amaka', photo: 'https://avatars.githubusercontent.com/u/105006208?v=4', bio: 'Teacher from Mexico.')
+second_user = User.create(name: 'Jaden', photo: 'https://avatars.githubusercontent.com/u/105528809?v=4', bio: 'Teacher from Poland.')
 
 first_post = Post.create(author_id: first_user.id, title: 'Hello', text: 'This is my first post')
+third_post = Post.create(author_id: first_user.id, title: 'cream de la cream', text: 'It is a pleasure')
+fourth_post = Post.create(author_id: first_user.id, title: 'kinetic', text: 'Boldly defined')
+fifth_post = Post.create(author_id: first_user.id, title: 'halooo', text: 'Nice to meet you')
 second_post = Post.create(author_id: second_user.id, title: 'Hi', text: 'This is my second post')
+third_post = Post.create(author_id: second_user.id, title: 'Hi there', text: 'Where are you from?')
 
 first_comment = Comment.create(author_id: first_user.id, post_id: first_post, text: 'Hi Tom!' )
 second_comment = Comment.create(author_id: second_user.id, post_id: second_post, text: 'Hi Jake')
