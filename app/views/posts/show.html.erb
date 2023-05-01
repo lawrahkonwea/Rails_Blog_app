@@ -18,7 +18,6 @@
   <div><%= link_to "Add Comment", new_user_post_comment_path(@post.author.id, @post.id) %></div>
     </div>
     
- 
             <div class="comments-container-post">
                 <% @comments=Post.find(@post.id).comments %>
                     <% @comments.includes(:author).each do |comment| %>
