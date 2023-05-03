@@ -30,4 +30,9 @@ RSpec.describe 'User', type: :feature, js: false do
     visit "/users/#{@user.id}/posts/#{@first_post.id}"
     expect(page).to have_content(@first_post.text)
   end
+  it 'shows the username of each commentor' do
+    commentor_name = Comment.find_by(author: @user.name)
+    visit "/users/#{@user.id}/posts/#{@first_post.id}"
+    expect(page).to have_content(commentor_name)
+  end
 end
