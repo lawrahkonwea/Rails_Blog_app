@@ -35,4 +35,9 @@ RSpec.describe 'User', type: :feature, js: false do
     visit "/users/#{@user.id}/posts/#{@first_post.id}"
     expect(page).to have_content(commentor_name)
   end
+
+  it 'shows the comment left by a commentor' do
+    visit "/users/#{@user.id}/posts/#{@first_post.id}"
+    expect(page).to have_content(@comment.text)
+  end
 end
