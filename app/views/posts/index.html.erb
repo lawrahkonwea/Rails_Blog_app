@@ -24,8 +24,7 @@
                 </div>
               
                 <div class="comments-container">
-                    <%# <% post.recent_five_comments.each do |comment| %>
-                    <% post.recent_five_comments.includes(:author).each do |comment| %>
+                    <% post.recent_five_comments.each do |comment| %>
                         <div  id="single-comment"> 
                            <span> <%= comment.author.name %> : <%= comment.text %></span>
                         </div>

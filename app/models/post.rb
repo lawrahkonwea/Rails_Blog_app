@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   end
 
   def recent_five_comments
-    comments.order(created_at: :desc).limit(5)
+    comments.last(5)
   end
 
   validates :title, presence: true, length: { maximum: 250 }
