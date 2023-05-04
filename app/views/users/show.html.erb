@@ -10,19 +10,20 @@
         <h2>Bio</h2>
         <p><%= @user.bio %></p>
     </div>
+    <% @user.three_recent_posts.each do |post| %>
     <div class="recent-posts">
-        <% @user.three_recent_posts.each do |post| %>
         <div class="single-post">
-            <h2><%= post.title %></h2>
-            <a href="<%= @user.id%>/posts/<%= post.id%>">
+        
+            <h2><a href="/users/<%= @user.id %>/posts/<%= post.id %>" class=""><%= post.title %></a></h2>
             <p><%= post.text %></p>
              <div class="comment-like">
                     <span class="comments">Comments: <%= post.comment_counter%>, </span>
                     <span class="likes">Likes:<%= post.likes_counter%></span>
                 </div>
-            </a>
+        
         </div>
-        <%end%> 
          <a href="<%=@user.id%>/posts/" class="button">See all posts</a>
     </div>
+    <%end%> 
+
 </div>
