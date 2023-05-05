@@ -202,3 +202,13 @@
     flex-direction: column;
     gap: 1.4rem;
   }
+
+  .sign_out {
+    border-radius: 5px;
+    margin: 10px 0 10px 10px;
+    cursor: pointer;
+  }
+  .sign_out:hover  {
+    transition: 3s;
+    background-color: red;
+  }
