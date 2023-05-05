@@ -125,6 +125,12 @@ To deploy the app you can use
 - Twitter: [@lawrah_on_Twitter](https://twitter.com/lawrah_xo)
 - LinkedIn: [@laura_on_LinkedIn](https://www.linkedin.com/in/amakalaurakonwea/)
 
+### 👤 **Thinus Van De Venter**
+
+- GitHub: [@Thinus01](https://github.com/Thinus01)
+- Twitter: [@thinus_v_d_v](https://twitter.com/thinus_v_d_v)
+- LinkedIn: [Thinus Van De Venter](https://www.linkedin.com/in/thinus-van-de-venter-99aa26203)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
